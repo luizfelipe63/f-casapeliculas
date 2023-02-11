@@ -81,14 +81,21 @@ export const BgHeader = styled(Image, {
   width: '100%'
 })
 
+export const Dvider = styled('div', {
+  height: '1px',
+  background: '$yellow'
+})
+
 export const Services = styled('section', {
   maxWidth: 1140,
   margin: '0 auto',
+  paddingTop: '5rem',
+  marginBottom: '5rem',
 
   h1: {
-    color: '$black',
+    fontSize: '$2xl',
     marginBottom: '5rem',
-    paddingTop: '5rem',
+    color: '$black',
     textAlign: 'center'
   }
 })
@@ -122,10 +129,12 @@ export const Service = styled('div', {
 })
 
 export const About = styled('section', {
+  paddingTop: '5rem',
+
   h1: {
+    fontSize: '$2xl',
+    paddingBottom: '5rem',
     color: '$black',
-    marginBottom: '5rem',
-    paddingTop: '5rem',
     textAlign: 'center'
   }
 })
@@ -139,6 +148,10 @@ export const AboutUs = styled('div', {
   margin: '0 auto',
   color: '$black',
 
+  h2: {
+    marginBottom: '1.25rem'
+  },
+
   p: {
     maxWidth: 632,
     marginBottom: '0.625rem'
@@ -146,17 +159,58 @@ export const AboutUs = styled('div', {
 })
 
 export const AdditionalInfos = styled('div', {
-  background: '$yellow',
+  background: '$green',
+  padding: '2rem'
+})
+
+export const ContentInfos = styled('div', {
+  color: '$green',
+  fontWeight: 'bold',
+  maxWidth: 1140,
+  margin: '0 auto',
 
   div: {
     display: 'flex',
-    color: '$green',
-    fontWeight: 'bold',
-    maxWidth: 1140,
-    margin: '0 auto'
+    alignItems: 'center',
+    gap: '3rem',
+
+    h2: {
+      fontSize: '$2xl'
+    }
   }
 })
 
 export const Footer = styled('footer', {
+  marginTop: '2rem',
   background: '$green'
 })
+
+export const ContentFooter = styled('div', {
+  maxWidth: 1140,
+  margin: '0 auto',
+  padding: '2.5rem',
+  display: 'flex',
+  justifyContent: 'space-between'
+})
+
+export const BaseFooter = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1rem',
+
+  a: {
+    color: '$whith',
+    textDecoration: 'none',
+    transition: 'color 0.2s',
+
+    '&:hover': {
+      color: '$yellow'
+    }
+  }
+})
+
+export const ContantFooter = styled(BaseFooter, {})
+
+export const MenuFooter = styled(BaseFooter, {})
+
+export const SocialFooter = styled(BaseFooter, {})

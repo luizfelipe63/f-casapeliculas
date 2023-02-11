@@ -5,21 +5,33 @@ import {
   BgHeader,
   ButtonHighlight,
   ButtonNav,
+  Clients,
   Container,
+  ContantFooter,
   Content,
   ContentAbout,
+  ContentFooter,
   ContentHighlight,
+  ContentInfos,
   ContentService,
+  Dvider,
   Footer,
   HeaderContainer,
   Highlight,
+  MenuFooter,
   Navigation,
   Service,
-  Services
+  Services,
+  SocialFooter
 } from '../styles/pages'
 import aa from '../assets/destaque.webp'
-import bg from '../assets/inclinação.svg'
 import about from '../assets/about.png'
+import company01 from '../assets/clients/Company-01.svg'
+import company02 from '../assets/clients/Company-02.svg'
+import company03 from '../assets/clients/Company-03.svg'
+import company05 from '../assets/clients/Company-05.svg'
+import company06 from '../assets/clients/Company-06.svg'
+import company07 from '../assets/clients/Company-07.svg'
 import Image from 'next/image'
 import { Buildings, Car, House } from 'phosphor-react'
 
@@ -78,11 +90,13 @@ export default function Home() {
           </Service>
         </ContentService>
       </Services>
+      <Dvider></Dvider>
       <About id="about">
         <h1>Sobre</h1>
         <ContentAbout>
           <AboutUs>
             <h2>Quem somos</h2>
+            <div></div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
               egestas odio sapien dis massa massa massa. Accumsan, cras
@@ -105,24 +119,40 @@ export default function Home() {
           <Image src={about} alt="" height={600} />
         </ContentAbout>
         <AdditionalInfos>
-          <div>
+          <ContentInfos>
             <div>
-              <h2>2023</h2>
-              <span>Ano fundado</span>
+              <Image src={company07} alt="" width={150} height={70} />
+              <Image src={company01} alt="" width={150} height={70} />
+              <Image src={company02} alt="" width={150} height={70} />
+              <Image src={company03} alt="" width={150} height={70} />
+              <Image src={company05} alt="" width={150} height={70} />
+              <Image src={company06} alt="" width={150} height={70} />
             </div>
-            <div>
-              <h2>2023</h2>
-              <span>Ano fundado</span>
-            </div>
-            <div>
-              <h2>2023</h2>
-              <span>Ano fundado</span>
-            </div>
-          </div>
+          </ContentInfos>
         </AdditionalInfos>
       </About>
       <Footer>
-        <Content>oi</Content>
+        <ContentFooter>
+          <ContantFooter>
+            <h2>Logo</h2>
+            <span>(61) 0000-0000</span>
+            <span>contato@transit.com</span>
+          </ContantFooter>
+          <MenuFooter>
+            <h2>Menu</h2>
+            <a href="#">Home</a>
+            <a href="#services">Serviços</a>
+            <a href="#about">Sobre</a>
+            <a href="#">Depoimentos</a>
+          </MenuFooter>
+          <SocialFooter>
+            <h2>Social</h2>
+            <a href="#">Instagram</a>
+            <a href="#services">Facebook</a>
+            <a href="#about">Linkedin</a>
+            <a href="#">Twite</a>
+          </SocialFooter>
+        </ContentFooter>
       </Footer>
     </Container>
   )
