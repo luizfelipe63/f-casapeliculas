@@ -15,6 +15,7 @@ export const {
       black: '#1B1B1B',
 
       green: '#008B2E',
+      gray: '#F8F8F8',
       yellow: '#FFF200'
     },
     fontSizes: {

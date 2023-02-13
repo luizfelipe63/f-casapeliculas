@@ -4,9 +4,9 @@ import { styled } from '..'
 export const Container = styled('header', {})
 
 export const HeaderContainer = styled('header', {
-  position: 'relative',
   background: '$green',
-  marginBottom: '5rem'
+  marginBottom: '5rem',
+  height: '100vh'
 })
 
 export const Content = styled('div', {
@@ -73,12 +73,6 @@ export const ContentHighlight = styled('section', {
   h1: {
     fontSize: '$h6'
   }
-})
-
-export const BgHeader = styled(Image, {
-  position: 'absolute',
-  top: '-10px',
-  width: '100%'
 })
 
 export const Dvider = styled('div', {
@@ -158,6 +152,44 @@ export const AboutUs = styled('div', {
   }
 })
 
+export const Testimonials = styled('div', {
+  maxWidth: 1140,
+  margin: '0 auto',
+  color: '$black',
+  paddingTop: '5rem',
+
+  h1: {
+    paddingBottom: '5rem',
+    textAlign: 'center'
+  }
+})
+
+export const Testimonial = styled('div', {
+  background: '$gray',
+  padding: '1.5rem',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '1rem',
+  borderRadius: 6,
+
+  p: {
+    textAlign: 'center'
+  }
+})
+
+export const ContentTestimonials = styled('div', {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)',
+  gap: '1rem',
+
+  img: {
+    width: '5rem',
+    height: '5rem',
+    clipPath: 'circle()'
+  }
+})
+
 export const AdditionalInfos = styled('div', {
   background: '$green',
   padding: '2rem'
@@ -180,6 +212,39 @@ export const ContentInfos = styled('div', {
   }
 })
 
+export const Contant = styled('section', {
+  maxWidth: 1140,
+  margin: '0 auto',
+  paddingTop: '5rem',
+
+  h1: {
+    paddingBottom: '5rem',
+    textAlign: 'center',
+    color: '$black'
+  }
+})
+export const ContentContant = styled('div', {
+  display: 'flex',
+  justifyContent: 'space-between',
+
+  div: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1.25rem'
+  },
+
+  span: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    color: '$black'
+  },
+
+  iframe: {
+    border: 0
+  }
+})
+
 export const Footer = styled('footer', {
   marginTop: '2rem',
   background: '$green'
@@ -188,7 +253,7 @@ export const Footer = styled('footer', {
 export const ContentFooter = styled('div', {
   maxWidth: 1140,
   margin: '0 auto',
-  padding: '2.5rem',
+  padding: '2.5rem 0',
   display: 'flex',
   justifyContent: 'space-between'
 })
