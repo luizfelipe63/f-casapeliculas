@@ -1,11 +1,11 @@
 import {
   ButtonHighlight,
   ButtonNav,
-  Container,
   ContantFooter,
   Content,
   ContentFooter,
   ContentHighlight,
+  Dvider,
   Footer,
   HeaderContainer,
   Highlight,
@@ -21,7 +21,7 @@ import { Contacts } from '../components/contact'
 
 export default function Home() {
   return (
-    <Container>
+    <div>
       <HeaderContainer>
         <Content>
           <Navigation>
@@ -76,6 +76,6 @@ export default function Home() {
           </SocialFooter>
         </ContentFooter>
       </Footer>
-    </Container>
+    </div>
   )
 }

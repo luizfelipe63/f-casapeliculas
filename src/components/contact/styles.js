@@ -1,10 +1,5 @@
 import { styled } from '../../styles'
 
-export const Dvider = styled('div', {
-  height: '1px',
-  background: '$yellow'
-})
-
 export const Contact = styled('section', {
   maxWidth: 1140,
   margin: '0 auto',

@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import { styled } from '..'
 
-export const Container = styled('header', {})
-
 export const HeaderContainer = styled('header', {
   background: '$green',
   marginBottom: '5rem',
@@ -14,11 +12,20 @@ export const Content = styled('div', {
   margin: '0 auto'
 })
 
+export const Dvider = styled('div', {
+  height: '1px',
+  background: '$yellow'
+})
+
 export const Navigation = styled('nav', {
-  padding: '2.5rem 0',
+  background: '$green',
+  padding: '1.5rem',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+  // position: 'fixed',
+  width: '100%',
+  zIndex: 100,
 
   div: {
     display: 'flex',
