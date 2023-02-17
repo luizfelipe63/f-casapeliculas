@@ -1,7 +1,7 @@
 import { styled } from '../../styles'
 
 export const AboutContent = styled('section', {
-  paddingTop: '5rem',
+  padding: '10rem 0',
 
   h1: {
     fontSize: '$2xl',

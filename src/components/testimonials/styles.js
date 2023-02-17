@@ -4,7 +4,7 @@ export const TestimonialsContent = styled('div', {
   maxWidth: 1140,
   margin: '0 auto',
   color: '$black',
-  paddingTop: '5rem',
+  padding: '10rem 0 ',
 
   h1: {
     paddingBottom: '5rem',

@@ -3,8 +3,7 @@ import { styled } from '../../styles'
 export const ServicesContent = styled('section', {
   maxWidth: 1140,
   margin: '0 auto',
-  paddingTop: '5rem',
-  marginBottom: '5rem',
+  padding: '10rem 0',
 
   h1: {
     fontSize: '$2xl',

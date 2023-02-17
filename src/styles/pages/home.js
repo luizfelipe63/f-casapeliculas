@@ -2,45 +2,40 @@ import Image from 'next/image'
 import { styled } from '..'
 
 export const HeaderContainer = styled('header', {
-  background: '$green',
-  marginBottom: '5rem',
-  height: '100vh'
+  background: '$green'
+  // marginBottom: '5rem'
+  // height: '100vh'
 })
 
-export const Content = styled('div', {
-  maxWidth: 1140,
-  margin: '0 auto'
-})
-
-export const Dvider = styled('div', {
-  height: '1px',
-  background: '$yellow'
-})
-
-export const Navigation = styled('nav', {
-  background: '$green',
-  padding: '1.5rem',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  // position: 'fixed',
+export const NavContainer = styled('nav', {
   width: '100%',
+  position: 'fixed',
   zIndex: 100,
+  background: '$green',
+  padding: '2rem 0'
+})
 
-  div: {
-    display: 'flex',
-    gap: '2rem',
+export const Navigation = styled('div', {
+  display: 'flex',
+  gap: '2rem',
 
-    a: {
-      color: '$whith',
-      textDecoration: 'none',
-      transition: 'color 0.2s',
+  a: {
+    color: '$whith',
+    textDecoration: 'none',
+    transition: 'color 0.2s',
 
-      '&:hover': {
-        color: '$yellow'
-      }
+    '&:hover': {
+      color: '$yellow'
     }
   }
+})
+
+export const NavContent = styled('div', {
+  maxWidth: 1140,
+  margin: '0 auto',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center'
 })
 
 export const ButtonBase = styled('a', {
@@ -53,16 +48,18 @@ export const ButtonBase = styled('a', {
   padding: '1rem 2rem'
 })
 
-export const ButtonNav = styled(ButtonBase, {})
 export const ButtonHighlight = styled(ButtonBase, {})
 
 export const Highlight = styled('section', {
+  maxWidth: 1140,
+  margin: '0 auto',
   display: 'flex',
-  gap: '1rem',
-  padding: '2.5rem 0',
+  justifyContent: 'space-between',
+
+  paddingTop: '10rem',
 
   img: {
-    borderRadius: 8
+    borderRadius: 6
   }
 })
 
@@ -72,18 +69,27 @@ export const ContentHighlight = styled('section', {
   justifyContent: 'center',
   alignItems: 'flex-start',
   gap: '1.25rem',
-
-  p: {
-    maxWidth: 479
-  },
+  maxWidth: 600,
+  // p: {},
 
   h1: {
     fontSize: '$h6'
   }
 })
 
+export const Inclination = styled('div', {
+  height: '140px',
+  width: '100%',
+
+  img: {
+    width: '100%',
+    // height: '100%',
+    fill: '$green'
+  }
+})
+
 export const Footer = styled('footer', {
-  marginTop: '2rem',
+  padding: '3.75rem 0',
   background: '$green'
 })
 

@@ -1,15 +1,15 @@
 import {
   ButtonHighlight,
-  ButtonNav,
   ContantFooter,
-  Content,
   ContentFooter,
   ContentHighlight,
-  Dvider,
   Footer,
   HeaderContainer,
   Highlight,
+  Inclination,
   MenuFooter,
+  NavContainer,
+  NavContent,
   Navigation,
   SocialFooter
 } from '../styles/pages/home'
@@ -17,42 +17,48 @@ import {
 import { Services } from '../components/services'
 import { About } from '../components/about'
 import { Testimonials } from '../components/testimonials'
-import { Contacts } from '../components/contact'
+import bghome from '../assets/bg-home.svg'
+import bgincline from '../assets/bg-inclinacao.svg'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <div>
       <HeaderContainer>
-        <Content>
-          <Navigation>
+        <NavContainer>
+          <NavContent>
             <span>Logo</span>
-            <div>
+            <Navigation>
               <a href="#">Home</a>
               <a href="#services">Serviços</a>
               <a href="#about">Sobre</a>
               <a href="#testimonials">Depoimentos</a>
-            </div>
-            <ButtonNav href="#contant">Contato</ButtonNav>
-          </Navigation>
-          <Highlight>
-            <ContentHighlight>
-              <p>Bem vindo à F casa Película.</p>
-              <h1>Transformando ações em oportunidades</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-                egestas odio sapien dis massa massa massa. Accumsan, cras
-                tristique adipiscing consectetur. Laoreet ante quisque in nulla
-                eleifend neque sed rutrum donec.
-              </p>
-              <ButtonHighlight>Agendar horário</ButtonHighlight>
-            </ContentHighlight>
-          </Highlight>
-        </Content>
+              <a href="#contact">Contato</a>
+            </Navigation>
+          </NavContent>
+        </NavContainer>
+        <Highlight>
+          <ContentHighlight>
+            <p>Bem vindo à F casa Película.</p>
+            <h1>Transformando ações em oportunidades</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
+              egestas odio sapien dis massa massa massa. Accumsan, cras
+              tristique adipiscing consectetur. Laoreet ante quisque in nulla
+              eleifend neque sed rutrum donec.
+            </p>
+            <ButtonHighlight>Agendar horário</ButtonHighlight>
+          </ContentHighlight>
+          <Image src={bghome} alt="" width={400} height={500} />
+        </Highlight>
+        <Inclination>
+          <Image src={bgincline} alt="" />
+        </Inclination>
       </HeaderContainer>
+
       <Services />
       <About />
       <Testimonials />
-      <Contacts />
       <Footer>
         <ContentFooter>
           <ContantFooter>
