@@ -113,28 +113,17 @@ export const Inclination = styled('div', {
 
   img: {
     width: '100%',
-    // height: '100%',
     fill: '$green'
+  },
+
+  '@bp3': {
+    height: 94
   }
 })
 
 export const Footer = styled('footer', {
-  padding: '3.75rem 0',
-  background: '$green'
-})
-
-export const ContentFooter = styled('div', {
-  maxWidth: 1140,
-  margin: '0 auto',
-  padding: '2.5rem 0',
-  display: 'flex',
-  justifyContent: 'space-between'
-})
-
-export const BaseFooter = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '1rem',
+  padding: '3.75rem 0 1rem',
+  background: '$green',
 
   a: {
     color: '$whith',
@@ -144,8 +133,44 @@ export const BaseFooter = styled('div', {
     '&:hover': {
       color: '$yellow'
     }
+  },
+
+  p: {
+    textAlign: 'center'
   }
 })
+
+export const ContentFooter = styled('div', {
+  maxWidth: 1140,
+  margin: '0 auto',
+  padding: '2.5rem 0 3rem',
+  display: 'flex',
+  justifyContent: 'space-between',
+
+  '@bp3': {
+    padding: '2rem 1rem',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1.5rem'
+  }
+})
+
+export const BaseFooter = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1rem'
+})
+
+// export const SeparatorMobile = styled('div', {
+//   display: 'flex',
+//   gap: '2rem',
+
+//   '@bp3': {
+//     display: 'flex',
+//     justifyContent: 'space-between',
+//     paddingBottom: '1.5rem'
+//   }
+// })
 
 export const ContantFooter = styled(BaseFooter, {})
 

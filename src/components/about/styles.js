@@ -17,8 +17,11 @@ export const ContentAbout = styled('div', {
 
   '@bp3': {
     img: {
-      display: 'none'
-    }
+      height: 450,
+      maxWidth: '100vw'
+    },
+    display: 'flex',
+    flexDirection: 'column-reverse'
   }
 })
 
@@ -34,6 +37,10 @@ export const AboutUs = styled('div', {
   p: {
     maxWidth: 632,
     marginBottom: '0.625rem'
+  },
+
+  '@bp3': {
+    padding: '1.5rem 1rem'
   }
 })
 

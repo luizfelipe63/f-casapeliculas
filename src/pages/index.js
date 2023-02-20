@@ -11,6 +11,7 @@ import {
   NavContainer,
   NavContent,
   Navigation,
+  SeparatorMobile,
   SocialFooter
 } from '../styles/pages/home'
 
@@ -51,9 +52,9 @@ export default function Home() {
           </ContentHighlight>
           <Image src={bghome} alt="" width={400} height={500} />
         </Highlight>
-        {/* <Inclination>
+        <Inclination>
           <Image src={bgincline} alt="" />
-        </Inclination> */}
+        </Inclination>
       </HeaderContainer>
 
       <Services />
@@ -81,6 +82,12 @@ export default function Home() {
             <a href="#">Twitter</a>
           </SocialFooter>
         </ContentFooter>
+        <p>
+          Todos os direitos reservados.{' '}
+          <a href="https://www.linkedin.com/in/luiz-feliperocha/">
+            Luiz Felipe
+          </a>
+        </p>
       </Footer>
     </div>
   )

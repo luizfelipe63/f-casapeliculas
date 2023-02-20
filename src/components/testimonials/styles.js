@@ -39,6 +39,7 @@ export const ContentTestimonials = styled('div', {
 
   '@bp3': {
     display: 'grid',
-    gridTemplateColumns: '1fr'
+    gridTemplateColumns: '1fr',
+    padding: '0 1rem'
   }
 })

@@ -21,6 +21,14 @@ export function About() {
     slides: {
       perView: 5
     },
+    breakpoints: {
+      '(min-width: 300px)': {
+        slides: { perView: 2, spacing: 5 }
+      },
+      '(min-width: 1000px)': {
+        slides: { perView: 5, spacing: 10 }
+      }
+    },
     drag: false,
     created(s) {
       s.moveToIdx(5, true, animation)
@@ -59,7 +67,7 @@ export function About() {
             sed rutrum donec.
           </p>
         </AboutUs>
-        <Image src={about} alt="" height={600} />
+        <Image src={about} alt="" width={500} height={600} />
       </ContentAbout>
       <AdditionalInfos>
         <div ref={slideRef} className="keen-slider">

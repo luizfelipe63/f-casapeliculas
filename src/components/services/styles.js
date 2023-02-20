@@ -19,6 +19,7 @@ export const ContentService = styled('div', {
   gap: '1.25rem',
 
   '@bp3': {
+    padding: '0 1rem',
     display: 'grid',
     gridTemplateColumns: '1fr'
   }
