@@ -25,11 +25,11 @@ export const {
       '2xl': '2rem',
 
       h6: '3.0625rem'
-    },
-    utils: {
-      bg: value => ({
-        background: `url(${value})`
-      })
     }
+  },
+  media: {
+    bp1: '(min-width: 640px)',
+    bp2: '(min-width: 768px)',
+    bp3: '(max-width: 1120px)'
   }
 })

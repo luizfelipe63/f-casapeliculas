@@ -20,5 +20,11 @@ export const GlobalStyle = globalCss({
   'body, input, textarea, button': {
     fontFamily: 'Poppins',
     fontWeight: 400
+  },
+
+  '@bp3': {
+    html: {
+      fontSize: '87.5%'
+    }
   }
 })

@@ -1,10 +1,7 @@
-import Image from 'next/image'
 import { styled } from '..'
 
 export const HeaderContainer = styled('header', {
   background: '$green'
-  // marginBottom: '5rem'
-  // height: '100vh'
 })
 
 export const NavContainer = styled('nav', {
@@ -12,7 +9,11 @@ export const NavContainer = styled('nav', {
   position: 'fixed',
   zIndex: 100,
   background: '$green',
-  padding: '2rem 0'
+  padding: '2rem 0',
+
+  '@bp3': {
+    zIndex: 100
+  }
 })
 
 export const Navigation = styled('div', {
@@ -27,6 +28,10 @@ export const Navigation = styled('div', {
     '&:hover': {
       color: '$yellow'
     }
+  },
+
+  '@bp3': {
+    display: 'none'
   }
 })
 
@@ -35,7 +40,13 @@ export const NavContent = styled('div', {
   margin: '0 auto',
   display: 'flex',
   justifyContent: 'space-between',
-  alignItems: 'center'
+  alignItems: 'center',
+
+  '@bp3': {
+    zIndex: 100,
+    display: 'flex',
+    flexDirection: 'column'
+  }
 })
 
 export const ButtonBase = styled('a', {
@@ -60,6 +71,19 @@ export const Highlight = styled('section', {
 
   img: {
     borderRadius: 6
+  },
+
+  '@bp3': {
+    img: {
+      display: 'none'
+    },
+
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '2rem',
+    paddingLeft: '1rem',
+    paddingRight: '1rem'
   }
 })
 
@@ -74,6 +98,12 @@ export const ContentHighlight = styled('section', {
 
   h1: {
     fontSize: '$h6'
+  },
+
+  '@bp3': {
+    textAlign: 'center',
+    display: 'flex',
+    alignItems: 'center'
   }
 })
 

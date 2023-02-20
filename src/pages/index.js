@@ -20,6 +20,7 @@ import { Testimonials } from '../components/testimonials'
 import bghome from '../assets/bg-home.svg'
 import bgincline from '../assets/bg-inclinacao.svg'
 import Image from 'next/image'
+import { Hamburger, List } from 'phosphor-react'
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
               <a href="#about">Sobre</a>
               <a href="#testimonials">Depoimentos</a>
               <a href="#contact">Contato</a>
+              <List />
             </Navigation>
           </NavContent>
         </NavContainer>
@@ -43,17 +45,15 @@ export default function Home() {
             <h1>Transformando ações em oportunidades</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              egestas odio sapien dis massa massa massa. Accumsan, cras
-              tristique adipiscing consectetur. Laoreet ante quisque in nulla
-              eleifend neque sed rutrum donec.
+              egestas odio sapien dis massa massa massa.
             </p>
             <ButtonHighlight>Agendar horário</ButtonHighlight>
           </ContentHighlight>
           <Image src={bghome} alt="" width={400} height={500} />
         </Highlight>
-        <Inclination>
+        {/* <Inclination>
           <Image src={bgincline} alt="" />
-        </Inclination>
+        </Inclination> */}
       </HeaderContainer>
 
       <Services />

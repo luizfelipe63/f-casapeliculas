@@ -16,7 +16,12 @@ export const ServicesContent = styled('section', {
 export const ContentService = styled('div', {
   display: 'grid',
   gridTemplateColumns: 'repeat(3, 1fr)',
-  gap: '1.25rem'
+  gap: '1.25rem',
+
+  '@bp3': {
+    display: 'grid',
+    gridTemplateColumns: '1fr'
+  }
 })
 
 export const Service = styled('div', {

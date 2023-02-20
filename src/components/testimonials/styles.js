@@ -35,5 +35,10 @@ export const ContentTestimonials = styled('div', {
     width: '5rem',
     height: '5rem',
     clipPath: 'circle()'
+  },
+
+  '@bp3': {
+    display: 'grid',
+    gridTemplateColumns: '1fr'
   }
 })

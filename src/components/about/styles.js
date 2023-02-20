@@ -10,9 +10,16 @@ export const AboutContent = styled('section', {
     textAlign: 'center'
   }
 })
+
 export const ContentAbout = styled('div', {
   display: 'flex',
-  alignItems: 'flex-start'
+  alignItems: 'flex-start',
+
+  '@bp3': {
+    img: {
+      display: 'none'
+    }
+  }
 })
 
 export const AboutUs = styled('div', {
